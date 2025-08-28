@@ -1,0 +1,70 @@
+### error Analysi report 
+def analyze_residuals():
+
+    residuals = y_test - y_pred_test
+
+    
+
+    # Residual statistics
+
+    residual_stats = {
+
+        'mean': residuals.mean(),
+
+        'std': residuals.std(),
+
+        'skewness': stats.skew(residuals),
+
+        'kurtosis': stats.kurtosis(residuals)
+
+    }
+
+    
+
+    # Residual plots
+
+    plt.figure(figsize=(15, 10))
+
+    
+
+    # Q-Q plot
+
+    plt.subplot(2, 3, 1)
+
+    stats.probplot(residuals, dist="norm", plot=plt)
+
+    plt.title('Q-Q Plot of Residuals')
+
+    
+
+    # Residuals vs Fitted
+
+    plt.subplot(2, 3, 2)
+
+    plt.scatter(y_pred_test, residuals, alpha=0.6)
+
+    plt.xlabel('Fitted Values')
+
+    plt.ylabel('Residuals')
+
+    plt.title('Residuals vs Fitted Values')
+
+    
+
+    # Histogram of residuals
+
+    plt.subplot(2, 3, 3)
+
+    plt.hist(residuals, bins=50, alpha=0.7)
+
+    plt.xlabel('Residuals')
+
+    plt.ylabel('Frequency')
+
+    plt.title('Distribution of Residuals')
+
+    
+
+    plt.tight_layout()
+
+    plt.show()
