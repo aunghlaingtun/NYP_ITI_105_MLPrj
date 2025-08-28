@@ -50,7 +50,7 @@ Tech Stack
 Setup Instructions
 ------------------
 1. Clone the repository:
-   
+   Git clone : https://github.com/aunghlaingtun/NYP_ITI_105_MLPrj.git
    cd ml-hdb-resale
 
 2. Create virtual environment:
