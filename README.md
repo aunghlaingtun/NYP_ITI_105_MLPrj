@@ -65,6 +65,8 @@ Setup Instructions
    https://dagshub.com/aunghlaingtun/NYP_ITI_105.mlflow/#/models
    mlflow ui --port 5000
    (Use ngrok for public access if needed)
+5. Launch Stereamlit App for infernece with live UI :
+   https://iti105mlproject-xwmcdqbce2rvcjgu9buabk.streamlit.app/
 
 Model Training Workflow
 -----------------------
