@@ -31,6 +31,7 @@ Tech Stack
 - DagsHub
 - Pyngrok
 - Google Colab + Drive
+- streamlit 
   
 
   
