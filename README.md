@@ -38,7 +38,7 @@ Tech Stack
 
 ### Project Structure
 -----------------
- ml-hdb-resale/
+ NYP_ITI_105MLPrj/
  
 ├── data/                  # Raw and processed CSV files\
 ├── notebooks/             # Colab notebooks (.ipynb)\
